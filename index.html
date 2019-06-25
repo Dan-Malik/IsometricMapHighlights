@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="style.css">
+<title>Officium Preview Page</title>
+<script src="jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="../jquery.maphilight.min.js"></script>
+</head>
+<body>
+<h1 class="text-center">Welcome to Officium</h1>
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a class="home" href="#">Home</a></li>
+    <li class="breadcrumb-item"><a class="library" href="#">Library</a></li>
+    <li class="breadcrumb-item"><a class="forum" href="#">Forum</a></li>
+    <li class="breadcrumb-item"><a class="shop" href="#">Shop</a></li>
+    <li class="breadcrumb-item"><a class="postoffice" href="#">Post Office</a></li>
+  </ol>
+</nav>
+<div class = "towncontainer">
+<img src="./Town.png" class = "townimage" id="townimg" usemap="#townareas">
+<map name="townareas">
+<area class="townarea1" shape="poly" coords="160,132, 200,114, 212,120, 212,110, 252,90, 290,110, 290,160, 355,190, 200,265, 149,240, 160,235, 160,195, 149,190, 160,184, 160,132" href="#">
+<area class="townarea2" shape="poly" coords="369,287, 369,212, 409,192, 447,212, 447,287, 459,294, 408,320, 356,294, 369,287" href="#">
+<area class="townarea3" shape="poly" coords="316,157, 316,133, 356,114, 394,133, 394,145, 420,157, 420,171, 369,197, 305,164, 316,157" href="#">
+<area class="townarea4" shape="poly" coords="511,268, 524,262, 524,252, 520,250, 520,243, 524,240, 524,210, 563,191, 602,210, 602,261, 614,267, 563,292, 511,268" href="#">
+<area class="townarea5" shape="poly" coords="460,242, 446,235, 447,213, 420,198, 420,101, 460,83, 499,103,  499,190, 506,200, 503,202 503,211, 510,216, 460,242" href="#">
+</map>
+<area
+</map>
+</div>
+
+
+<script>
+$(document).ready(function(){
+	$('.home').mouseover( function(){
+        $('.townimage').attr("src", "./TownHighlighted1.png");})
+	$('.home').mouseout( function(){
+        $('.townimage').attr("src", "./Town.png");})
+
+	$('.library').mouseover( function(){
+        $('.townimage').attr("src", "./TownHighlighted2.png");})
+	$('.library').mouseout( function(){
+        $('.townimage').attr("src", "./Town.png");})
+
+	$('.forum').mouseover( function(){
+        $('.townimage').attr("src", "./TownHighlighted3.png");})
+	$('.forum').mouseout( function(){
+        $('.townimage').attr("src", "./Town.png");})
+
+	$('.shop').mouseover( function(){
+        $('.townimage').attr("src", "./TownHighlighted4.png");})
+	$('.shop').mouseout( function(){
+        $('.townimage').attr("src", "./Town.png");})
+
+
+	$('.postoffice').mouseover( function(){
+        $('.townimage').attr("src", "./TownHighlighted5.png");})
+	$('.postoffice').mouseout( function(){
+        $('.townimage').attr("src", "./Town.png");})
+
+
+
+
+});
+</script>
+</body>
+</html>
